@@ -1,0 +1,59 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* 전체 레이아웃 */
+.wrap {
+  width: 960px;
+  height: 500px;
+  background-color: bisque;
+  margin: auto;
+}
+.nav{
+ border-bottom: 2px solid #333;
+}
+.nav ul {
+  width: 600px;
+    display: flex;
+  margin: auto;
+  background-color: blueviolet;
+}
+.nav ul li {
+    width: calc(100% / 4);
+    text-align: center;
+}
+.nav ul li a{
+ padding: 20px 0;
+    display: block;
+}.nav ul li a:hover{
+    background-color: rgb(165, 105, 196);
+    color: #fff;
+}
+.container{
+    padding: 20px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   background-color: azure;
+}
+.content{
+    width: 400px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    padding: 20px;
+}
+#intro :target{
+ background-color: rgb(196, 183, 165);   
+ color: #fff;
+}
